@@ -44,7 +44,7 @@ form.addEventListener('submit', (e) => {
         }));
     
         .catch((error) => iziToast.error({
-            title: '',
+            title: 'Error',
             message: `Rejected promise in  ${error}ms`,
             backgroundColor: 'rgb(239, 64, 64)',
             titleColor: 'white',
