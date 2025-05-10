@@ -1,0 +1,92 @@
+.label-delay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 360px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 16px;
+  margin-top: 36px;
+}
+.input-label {
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 0 0 0 18px;
+}
+
+.input-label: hover {
+
+}
+
+.fieldset {
+  width: 360px;
+  height: 78px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+}
+.fieldset-label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 48px;
+  max-width: 264px;
+  margin: 14px 48px 8px;
+}
+.legend {
+  max-width: 45px;
+  margin-left: 24px;
+  padding: 0 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+}
+input[type='radio'] {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.label-radio {
+  width: 104px;
+  height: 32px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.fieldset-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  border: 0;
+  color: #fff;
+}
+.fieldset-button:hover {
+  background: #6c8cff;
+}
