@@ -40,8 +40,8 @@ form.addEventListener('submit', (e) => {
             position: 'topRight',
             icon: '',
             imageWidth: 24,
-             backgroundColor: 'rgb(89, 161, 13)'
-        }))
+            backgroundColor: 'rgb(89, 161, 13)'
+        }));
         .catch((error) => iziToast.error({
             title: '',
             message: `Rejected promise in  ${error}ms`,
