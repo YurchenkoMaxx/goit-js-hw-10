@@ -49,7 +49,6 @@ form.addEventListener('submit', (e) => {
             titleColor: 'white',
             messageColor: 'white',
             image: '../img/bi_x-octagon.svg',
-            imageColor: 'white,'
             position: 'topRight',
             icon: '',
             imageWidth: 24,
