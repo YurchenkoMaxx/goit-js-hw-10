@@ -19,7 +19,7 @@ function createPromise(value, isActive, delay) {
             }, delay);
     });
     return promise;
-}
+};
 
 
 form.addEventListener('submit', (e) => {
@@ -29,9 +29,7 @@ form.addEventListener('submit', (e) => {
 
     const promise = createPromise(delay, isActive, delay);
 
-    promise
-
-        .then((result) => iziToast.success({
+    promise.then((result) => iziToast.success({
             title: 'OK', message: `Fulfilled promise in ${result}ms`,
             width: 302,
             titleColor: 'white',
@@ -41,8 +39,7 @@ form.addEventListener('submit', (e) => {
             icon: '',
             imageWidth: 24,
             backgroundColor: 'rgb(89, 161, 13)'
-        }));
-    
+    }));
         .catch((error) => iziToast.error({
             title: 'Error',
             message: `Rejected promise in  ${error}ms`,
@@ -52,9 +49,9 @@ form.addEventListener('submit', (e) => {
             image: '../img/bi_x-octagon.svg',
             position: 'topRight',
             icon: '',
-            imageWidth: 24,
+            imageWidth: 24
         }));
 
 
 
-})
+});
