@@ -3,15 +3,8 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.form');
-
-    if (!form) {
-        console.error('Форма з класом ".form" не знайдена!');
-        return;
-    }
-});
 const form = document.querySelector('.form');
+
 
 function createPromise(value, isActive, delay) {
     const promise = new Promise((resolve, reject) => {
@@ -38,7 +31,7 @@ form.addEventListener('submit', (e) => {
             width: 302,
             titleColor: 'white',
             messageColor: 'white',
-            image: '../img/bi_check2-circle.svg',
+            image: '/src/img/bi_check2-circle.svg',
             position: 'topRight',
             icon: '',
             imageWidth: 24,
@@ -49,7 +42,7 @@ form.addEventListener('submit', (e) => {
             backgroundColor: 'rgb(239, 64, 64)',
             titleColor: 'white',
             messageColor: 'white',
-            image: '../img/bi_x-octagon.svg',
+            image: '/src/img/bi_x-octagon.svg',
             position: 'topRight',
             icon: '',
             imageWidth: 24,
