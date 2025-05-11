@@ -35,7 +35,7 @@ form.addEventListener('submit', (e) => {
             
             iconUrl: okMessage,
             position: 'topRight',
-            icon: '',
+            // icon: '',
             imageWidth: 24,
         backgroundColor: 'rgb(89, 161, 13)',
     })).catch((error) => iziToast.error({
@@ -46,7 +46,7 @@ form.addEventListener('submit', (e) => {
         messageColor: 'white',
             iconUrl: closeMessage,
             position: 'topRight',
-            icon: '',
+            // icon: '',
             imageWidth: 24,
         }));
 
