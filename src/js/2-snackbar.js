@@ -31,7 +31,7 @@ form.addEventListener('submit', (e) => {
             width: 302,
             titleColor: 'white',
             messageColor: 'white',
-            image: '../img/bi_check2-circle.svg',
+            image: '/src/img/bi_check2-circle.svg',
             position: 'topRight',
             icon: '',
             imageWidth: 24,
