@@ -3,7 +3,14 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.form');
 
+    if (!form) {
+        console.error('Форма з класом ".form" не знайдена!');
+        return;
+    }
+});
 const form = document.querySelector('.form');
 
 function createPromise(value, isActive, delay) {
