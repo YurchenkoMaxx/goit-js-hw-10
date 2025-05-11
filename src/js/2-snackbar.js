@@ -3,11 +3,8 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
-// const submitBtn = document.querySelector('.fieldset-button');
-// const inputdelay = document.querySelector('.input-label');
-// const inputFulfilled = document.querySelector('.js-fulfilled');
-// const inputRejected = document.querySelector('.js-rejected');
-const form = document.querySelector('.form-snackbar');
+
+const form = document.querySelector('.form');
 
 function createPromise(value, isActive, delay) {
     const promise = new Promise((resolve, reject) => {
@@ -23,8 +20,8 @@ function createPromise(value, isActive, delay) {
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const delay = e.target.elements.delay.value;
+    e.preventDefault();
+    const delay = Number(e.target.elements.delay.value);
     const isActive = e.target.elements.state.value === 'fulfilled';
 
     const promise = createPromise(delay, isActive, delay);
