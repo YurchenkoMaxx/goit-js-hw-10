@@ -36,7 +36,7 @@ const options = {
             startBtn.disabled = true;
             iziToast.show({
                 title: 'Error',
-                message: 'Illegal operation',
+                message: 'Please choose a date in the future',
                 position: 'topRight',
                 backgroundColor: 'rgb(239, 64, 64)',
                 image: '../img/bi_x-octagon.svg',
@@ -46,6 +46,7 @@ const options = {
                             });
         } else {
             startBtn.disabled = false;
+
         };
   },
 };
@@ -55,6 +56,9 @@ flatpickr(userInput, options);
 
 let intervalID;
 startBtn.addEventListener('click', () => {
+
+    startBtn.disabled = true;
+            userInput.disabled = true;
     
 clearInterval(intervalID);
     intervalID = setInterval(() => {
@@ -73,6 +77,8 @@ clearInterval(intervalID);
             hoursEl.textContent = "00";
             minutesEl.textContent = "00";
             secondsEl.textContent = "00";
+            startBtn.disabled = false;
+            userInput.disabled = false;
             return;
         }
             }, 1000);
