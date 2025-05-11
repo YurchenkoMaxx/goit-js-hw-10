@@ -7,6 +7,7 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
+
 const startBtn = document.querySelector('.input-btn');
 const userInput = document.querySelector('#datetime-picker');
 const daysEl = document.querySelector('[data-days]');

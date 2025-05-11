@@ -2,7 +2,8 @@
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
-
+import okMessage from '../img/bi_check2-circle.svg';
+import closeMessage from '../img/bi_x-octagon.svg';
 const form = document.querySelector('.form');
 
 
@@ -30,8 +31,9 @@ form.addEventListener('submit', (e) => {
             title: 'OK', message: `Fulfilled promise in ${result}ms`,
             width: 302,
             titleColor: 'white',
-            messageColor: 'white',
-            image: '../img/bi_check2-circle.svg',
+        messageColor: 'white',
+            
+            iconUrl: okMessage,
             position: 'topRight',
             icon: '',
             imageWidth: 24,
@@ -41,8 +43,8 @@ form.addEventListener('submit', (e) => {
             message: `Rejected promise in  ${error}ms`,
             backgroundColor: 'rgb(239, 64, 64)',
             titleColor: 'white',
-            messageColor: 'white',
-            image: '/src/img/bi_x-octagon.svg',
+        messageColor: 'white',
+            iconUrl: closeMessage,
             position: 'topRight',
             icon: '',
             imageWidth: 24,
